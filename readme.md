@@ -28,5 +28,5 @@ Here are some ideas to get you started:
 - 👯 I’m looking to collaborate with Web Developers 
 - 💬 Ask me about anything tech <a href="Chiwanza16@gmail.com">Chiwanza16@gmail.com</a>
 - 😄 Pronouns: He/Him
-- ⚡ Fun fact: I love watching English Premier League and Selling my clothing brands on my E-Commerce Website <a href=""> Couture Threads </a>
+- ⚡ Fun fact: I love watching English Premier League and Movies
 
