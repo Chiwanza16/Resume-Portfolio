@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://marvelouschiwanza.dev/</loc>
+  <lastmod>2025-07-02T11:39:26+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://marvelouschiwanza.dev/resume</loc>
+  <lastmod>2025-07-02T11:39:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://marvelouschiwanza.dev/assets/img/certificates/Marvelous%20Chiwanza.pdf</loc>
+  <lastmod>2025-07-02T11:39:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://marvelouschiwanza.dev/assets/img/certificates/Certificate_of_Completion.pdf</loc>
+  <lastmod>2025-07-02T11:39:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://marvelouschiwanza.dev/assets/img/certificates/Google%20Digital%20Marketing.pdf</loc>
+  <lastmod>2025-07-02T11:39:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://marvelouschiwanza.dev/assets/img/certificates/Meta%20Front%20End%20Developer.pdf</loc>
+  <lastmod>2025-07-02T11:39:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://marvelouschiwanza.dev/assets/img/certificates/Google%20UX%20Design.pdf</loc>
+  <lastmod>2025-07-02T11:39:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
