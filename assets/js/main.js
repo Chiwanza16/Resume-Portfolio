@@ -44,10 +44,7 @@
       if (!navbarlink.hash) return;
       let section = select(navbarlink.hash);
       if (!section) return;
-      if (
-        position >= section.offsetTop &&
-        position <= section.offsetTop + section.offsetHeight
-      ) {
+      if (position >= section.offsetTop && position <= section.offsetTop + section.offsetHeight) {
         navbarlink.classList.add("active");
       } else {
         navbarlink.classList.remove("active");
@@ -181,6 +178,59 @@
       mirror: false,
     });
   });
+
+  /**
+   * Portfolio type toggle (Websites / Applications)
+   */
+  const initPortfolioToggle = () => {
+    const toggleButtons = select(".portfolio-toggle-btn", true);
+    const grids = select(".portfolio-grid", true);
+
+    if (!toggleButtons.length || !grids.length) return;
+
+    const activateGrid = (target) => {
+      grids.forEach((grid) => {
+        const isWebsites = grid.classList.contains("portfolio-grid-websites");
+        const isApps = grid.classList.contains("portfolio-grid-apps");
+        const shouldShow = (target === "websites" && isWebsites) || (target === "applications" && isApps);
+
+        if (shouldShow) {
+          grid.classList.add("is-active");
+        } else {
+          grid.classList.remove("is-active");
+        }
+      });
+    };
+
+    on(
+      "click",
+      ".portfolio-toggle-btn",
+      function () {
+        const target = this.getAttribute("data-target");
+        if (!target) return;
+
+        toggleButtons.forEach((btn) => {
+          btn.classList.remove("active");
+          btn.setAttribute("aria-selected", "false");
+        });
+
+        this.classList.add("active");
+        this.setAttribute("aria-selected", "true");
+
+        activateGrid(target);
+      },
+      true
+    );
+
+    // Ensure initial state is consistent
+    const activeBtn = toggleButtons.find((btn) => btn.classList.contains("active"));
+    if (activeBtn) {
+      const target = activeBtn.getAttribute("data-target");
+      if (target) activateGrid(target);
+    }
+  };
+
+  window.addEventListener("load", initPortfolioToggle);
 
   /**
    * Initiate Pure Counter

@@ -817,9 +817,7 @@ section {
 
 .portfolio .portfolio-item:hover {
   transform: translateY(-10px);
-  
 }
-
 
 .portfolio .portfolio-wrap {
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -1014,11 +1012,7 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(235, 58, 4, 0.05),
-    rgba(247, 61, 5, 0.05)
-  );
+  background: linear-gradient(135deg, rgba(235, 58, 4, 0.05), rgba(247, 61, 5, 0.05));
   opacity: 0;
   transition: opacity 0.3s ease;
   border-radius: 20px;
@@ -1027,7 +1021,6 @@ section {
 .portfolio .portfolio-wrap:hover::after {
   opacity: 1;
 }
-
 
 .portfolio #portfolio-flters li:hover::before {
   left: 100%;
@@ -1273,6 +1266,70 @@ section {
 }
 .portfolio-item:nth-child(8) {
   animation-delay: 0.8s;
+}
+
+/* Portfolio type toggle (Websites / Applications) */
+.portfolio-toggle-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.portfolio-toggle {
+  display: inline-flex;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(39, 40, 41, 0.06);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  gap: 4px;
+}
+
+.portfolio-toggle-btn {
+  border: none;
+  background: transparent;
+  color: #728394;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-toggle-btn.active {
+  background: linear-gradient(135deg, #f73d05, #eb3a04b4);
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(235, 58, 4, 0.35);
+}
+
+.portfolio-toggle-btn:focus-visible {
+  outline: 2px solid #f73d05;
+  outline-offset: 2px;
+}
+
+.portfolio-grid {
+  display: none;
+}
+
+.portfolio-grid.is-active {
+  display: grid;
+}
+
+@media (max-width: 768px) {
+  .portfolio-toggle-wrapper {
+    display: none;
+  }
+
+  .portfolio-toggle {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .portfolio-toggle-btn {
+    flex: 1;
+    padding-inline: 10px;
+  }
 }
 
 /*--------------------------------------------------------------
